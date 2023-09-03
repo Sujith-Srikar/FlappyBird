@@ -1,10 +1,53 @@
+/* Default styles for all devices */
 body {
-    overflow: hidden;
-  }
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-#sky{
-    background-image: url(./images/background.png);
-    background-size: cover;
-    width: 99vw;
-    height: 99vh;
+#sky {
+  background-image: url(./images/background.png);
+  background-size: cover;
+  width: 99vw;
+  height: 99vh;
+}
+
+/* Media query for mobile phones (portrait) */
+@media (width <= 480px) {
+  #sky {
+    width: 95vw;
+    height: 95vh;
+  }
+}
+
+/* Media query for mobile phones (landscape) */
+@media (width > 480px) and (width <=767px) {
+  #sky {
+    width: 97vw;
+    height: 97vh;
+  }
+}
+
+/* Media query for tablets */
+@media (width >767px) and (width <= 1023px) {
+  #sky {
+    width: 98vw;
+    height: 98vh;
+  }
+}
+
+/* Media query for small desktops and laptops */
+@media (width > 1023px) and (width <= 1279px) {
+  #sky {
+    width: 98vw;
+    height: 98vh;
+  }
+}
+
+/* Media query for medium to large desktops */
+@media (width > 1279px) {
+  #sky {
+    width: 98vw;
+    height: 98vh;
+  }
 }
